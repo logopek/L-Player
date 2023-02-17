@@ -1,0 +1,27 @@
+QWidget{
+	background-color: #96aab7;
+	font-family: Rubik;
+	font-size: 7.5px;
+	font-weight: 600;
+}
+QSlider{
+	padding: 6px;
+}
+QPushButton{
+	background: transparent;
+	border: none;
+}
+
+QSlider::handle:horizontal {
+    background-color: #4a4a48;
+    border: 1px solid #5c5c5c;
+    width: 13px;
+    margin: -2px 0; /* handle is placed by default on the contents rect of the groove. Expand outside the groove */
+    border-radius: 3px;
+}
+
+QSlider::groove:horizontal {
+    height: 8px; /* the groove expands to the size of the slider by default. by giving it a height, it has a fixed size */
+    background-color: #c2c2c2;
+    margin: 2px 0;
+}
